@@ -4,3 +4,8 @@ body {
   color: white;
   background-color: black;
 }
+
+table, th,td{
+  border : solid white 4px;
+  font-size: 1.5em; 
+}
