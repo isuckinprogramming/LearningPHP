@@ -66,6 +66,11 @@
     $transactionElements = "";
     $pointer = 0;
 
+    // Creating an object of the Item class for every item 
+    // is kind of stupid. I got this shit
+    // maybe putting all the code about the purchase process
+    // inside the store object would be a better solution than
+    // this shit
     $bookMoney = $_GET["book-money"];
     $bookQuantity = $_GET["book-quantity"];
     $book = new Item("book", 10, 100);
@@ -116,6 +121,7 @@
       // $pointer++;
     }
 
+    // Likely to be changed
     if( isset($_GET["book-money"]) && isset($_GET["book-quantity"]) ){
         get_html_elem(
         $bookPurchase["itemName"],
@@ -154,12 +160,11 @@
         $erasersPurchase["profit"]
       );
     }
+
+    // This is way too convoluted
     ?>
 
   </table>
-
-
-
   <!-- reference for generating content
   <hr>
   <form action="index.php" method="post">
@@ -169,7 +174,6 @@
     <input type="submit">
   </form>
   <hr> -->
-
 </body>
 
 </html>
