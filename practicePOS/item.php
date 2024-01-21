@@ -3,11 +3,6 @@
 class Item
 {
 
-  public string $name;
-  public int $price;
-  public int $quantity;
-
-  // $name = "";
   public function __construct(
     string $passName = "no name set",
     int $pricePass = 1,
@@ -18,16 +13,10 @@ class Item
     $this->quantity = $quantityPass;
   }
 
-  // public function buy(
-  //   int $quantityPurchase = 1,
-  //   int $moneyPurchase = -1,
-  // ): array {
-
-
   /**
    * 
    * @return [
-   * isMoneyValid=>bool,
+  * isMoneyValid=>bool,
    * isQuantityValid=>bool,
    * change=>int:(default -1),
    * profit=>int:(default -1)]
