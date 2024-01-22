@@ -6,7 +6,7 @@
 # Create a git repository first
 git init
 
-$contentFolderNames = (
+$contentFolderNames = @(
   "PHP Install",
   "PHP Syntax",
   "PHP Comments",
