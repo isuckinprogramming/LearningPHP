@@ -34,6 +34,8 @@
     </tbody>
 
     <?php
+
+      echo "Php index file is operational.";
       require './item.php';
       require './store.php';
 

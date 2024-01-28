@@ -11,7 +11,7 @@
     <?php
         require("database.php");
 
-        echo "<br>something";
+        echo "<br>File is succesfully loaded";
         $sqlQuery = "SELECT * FROM user_table";
         $query = $connection->query($sqlQuery);
         $number = $query->num_rows;
